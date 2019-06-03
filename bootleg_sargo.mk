@@ -22,7 +22,7 @@
 #
 
 # Include DU common configuration
-include vendor/du/config/common_full_phone.mk
+include vendor/bootleggers/config/common_full_phone.mk
 
 # Inherit from those products. Most specific first.
 $(call inherit-product, device/google/bonito/aosp_sargo.mk)
@@ -31,7 +31,7 @@ $(call inherit-product, device/google/bonito/aosp_sargo.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 
-PRODUCT_NAME := du_sargo
+PRODUCT_NAME := bootleg_sargo
 PRODUCT_DEVICE := sargo
 PRODUCT_BRAND := Google
 PRODUCT_MODEL := Pixel 3a
