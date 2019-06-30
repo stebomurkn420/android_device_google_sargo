@@ -15,4 +15,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/bootleg_sargo.mk
+    $(LOCAL_DIR)/liquid.mk

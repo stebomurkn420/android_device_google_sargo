@@ -26,7 +26,7 @@ TARGET_SCREEN_HEIGHT := 2220
 TARGET_SCREEN_WIDTH := 1080
 
 # Include DU common configuration
-include vendor/bootleggers/config/common_full_phone.mk
+include vendor/liquid/config/common_full_phone.mk
 
 # Inherit from those products. Most specific first.
 $(call inherit-product, device/google/bonito/aosp_sargo.mk)
@@ -35,7 +35,7 @@ $(call inherit-product, device/google/bonito/aosp_sargo.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 
-PRODUCT_NAME := bootleg_sargo
+PRODUCT_NAME := liquid_sargo
 PRODUCT_DEVICE := sargo
 PRODUCT_BRAND := Google
 PRODUCT_MODEL := Pixel 3a
@@ -47,4 +47,3 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     PRIVATE_BUILD_DESC="sargo-user 9 PD2A.190115.032 5340326 release-keys"
 
 $(call inherit-product-if-exists, vendor/google/sargo/sargo-vendor.mk)
-$(call inherit-product-if-exists, vendor/pixelgapps/pixel-gapps.mk)
